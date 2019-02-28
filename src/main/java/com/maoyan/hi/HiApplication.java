@@ -11,6 +11,5 @@ public class HiApplication {
     public static void main(String[] args) {
         SpringApplication.run(HiApplication.class, args);
     }
-
 }
 
