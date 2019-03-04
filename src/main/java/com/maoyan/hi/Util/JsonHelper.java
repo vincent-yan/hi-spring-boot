@@ -20,17 +20,17 @@ public class JsonHelper {
         return new JsonResult(success, "", null);
     }
 
-    public static final <T> JsonResult<T> Success(T data) {
+    public static final <T> JsonResult<T> Result(Boolean success, String msg, T data) {
+        return new JsonResult(success, msg, data);
+    }
+
+
+    private static final <T> JsonResult<T> Success(T data) {
         return Result(true, "", data);
     }
 
 
-    public static final <T> JsonResult<T> Fail(String msg) {
+    private static final <T> JsonResult<T> Fail(String msg) {
         return Result(false, msg, null);
-    }
-
-
-    public static final <T> JsonResult<T> Result(Boolean success, String msg, T data) {
-        return new JsonResult(success, msg, data);
     }
 }

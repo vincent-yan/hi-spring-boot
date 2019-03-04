@@ -1,11 +1,10 @@
 package com.maoyan.hi.mapper;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.maoyan.hi.Entity.User;
 
 import java.util.List;
 
-public interface UserMapper extends BaseMapper<User> {
+public interface UserMapper {
 
      List<User> selectAll();
 

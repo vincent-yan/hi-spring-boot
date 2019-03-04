@@ -1,8 +1,6 @@
 package com.maoyan.hi.Entity;
 
-import lombok.Data;
-
-@Data
+//@Data
 public class JsonResult<T> {
 
     private boolean success;

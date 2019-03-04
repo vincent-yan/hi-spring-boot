@@ -22,7 +22,7 @@ public class HiApplicationTests {
         user.setName("范玮琪");
 //        user.setId(3);
         user.setGender(1);
-        Assert.assertTrue(mapper.insert(user) > 0);
+        Assert.assertTrue(mapper.addUser(user) > 0);
         // 成功直接拿会写的 ID
         System.err.println("\n插入成功 ID 为：" + user.getId());
     }
